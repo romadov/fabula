@@ -22,3 +22,13 @@
   -webkit-transform: translate(0, 50px);
   transform: translate(0, 50px)
 }
+
+.record__content{
+  max-width: 100%;
+}
+
+@media (min-width: 101.875em) {
+  .record {
+    padding-top: 7.625rem;
+  }
+}
