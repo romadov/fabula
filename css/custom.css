@@ -32,3 +32,10 @@
     padding-top: 7.625rem;
   }
 }
+
+@media (max-width: 768px) {
+  .tabs-block__item {
+    -webkit-transform: translate(0, 0) !important;
+    transform: translate(0, 0) !important;
+  }
+}
