@@ -27,6 +27,10 @@
   max-width: 100%;
 }
 
+.presentation-info__termin img{
+  max-width: 120px;
+}
+
 @media (min-width: 101.875em) {
   .record {
     padding-top: 7.625rem;
