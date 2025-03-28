@@ -35,6 +35,14 @@
   .record {
     padding-top: 7.625rem;
   }
+  .main-section__content::before{
+    position: relative;
+    top: 10vh;
+  }
+
+  .loaded .main-section__video-pc {
+    padding-top: 30vh;
+  }
 }
 
 @media (max-width: 768px) {
