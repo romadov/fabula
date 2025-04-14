@@ -15,20 +15,17 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		html.loading {
-			visibility: hidden;
-		}
-	</style>
 	<script>
-		document.documentElement.classList.add('loading');
 		window.addEventListener('load', () => {
-			document.documentElement.classList.remove('loading');
+			document.getElementById('preloader').classList.add('hidden');
 		});
 	</script>
 </head>
 
 <body>
+<div id="preloader">
+	<div class="spinner"></div>
+</div>
 <div data-scrolling class="wrapper">
 	<header class="header">
 		<div class="header__container">
@@ -231,7 +228,7 @@
 			<img src="img/formats/decore.svg" class="formats__decore" alt="Image">
 			<div class="formats__container">
 				<h2 class="formats__title">выбери любой удобный
-					формат аренды:</h2>
+					формат работы с нами:</h2>
 				<div class="formats__items">
 					<div class="formats__item item-format">
 						<div class="item-format__header">
@@ -248,7 +245,7 @@
 						<div class="item-format__footer">
 							<div class="item-format__price">От<span> 2500 р</span><span> / час</span></div>
 							<a href="#" data-popup="#popup-card-1" class="item-format__order">
-								<span>Заказать</span>
+								<span>Что входит</span>
 								<img src="img/formats/arrow-btn.svg" alt="icon">
 							</a>
 						</div>
@@ -256,46 +253,35 @@
 					<div class="formats__item item-format">
 						<div class="item-format__header">
 							<h3 class="item-format__title">
-								Аренда
-								+ проф. съёмка
+								Съёмка
 							</h3>
 							<span class="item-format__number">02</span>
 						</div>
 						<div class="item-format__description">
-							<p>В стоимость входит:</p>
-							<ul>
-								<li>работы оператора и звукорежиссёра</li>
-								<li>аренда студии и оборудования</li>
-							</ul>
+							<p>Для тех, кто не хочет мучаться с поиском хорошего оператора, звукорежиссёра и техники. Всё необходимое оборудование+оператор с золотыми руками прилагается</p>
 						</div>
 						<div class="item-format__footer">
-							<div class="item-format__price">От <span>10 990 р</span><span> / час</span></div>
+							<div class="item-format__price">От <span>9 990 р</span><span> / час</span></div>
 							<a href="#" data-popup="#popup-card-2" class="item-format__order">
-								<span>Заказать</span>
+								<span>Что входит</span>
 								<img src="img/formats/arrow-btn.svg" alt="icon">
 							</a>
 						</div>
 					</div>
 					<div class="formats__item item-format">
 						<div class="item-format__header">
-							<h3 class="item-format__title">Аренда
-								+ проф.съёмка
+							<h3 class="item-format__title">Съёмка
 								+ монтаж
 							</h3>
 							<span class="item-format__number">03</span>
 						</div>
 						<div class="item-format__description">
-							<p>В стоимость входит:</p>
-							<ul>
-								<li>работы оператора и звукорежиссёра</li>
-								<li>аренда студии и оборудования</li>
-								<li>монтаж</li>
-							</ul>
+							<p>Наша команда магистров видео наук снимет красиво, а смонтирует ещё лучше. Вам останется только нажать кнопку “опубликовать”</p>
 						</div>
 						<div class="item-format__footer">
-							<div class="item-format__price">От <span>14 990 р</span><span> / 2 часа</span></div>
+							<div class="item-format__price">От <span>17 500 р</span><span> / 1 час</span></div>
 							<a href="#" data-popup="#popup-card-3" class="item-format__order">
-								<span>Заказать</span>
+								<span>Что входит</span>
 								<img src="img/formats/arrow-btn.svg" alt="icon">
 							</a>
 						</div>
@@ -307,7 +293,7 @@
 						<ul class="formats__list">
 							<li>Одинаковый чек в будни и выходные</li>
 							<li>Скидки при бронировании от 5 слотов</li>
-							<li>Кэшбек 20% продюсерам</li>
+							<li>Абонементы на съёмку</li>
 						</ul>
 					</div>
 					<button type="button" class="booking">
@@ -335,7 +321,7 @@
 								студия + съёмка
 							</h3>
 							<div class="packages__price">
-								От <span> 9 990 P </span>/ час
+								<span> 9 990 P </span>/ час
 							</div>
 							<div class="packages__description">
 								<p>Наш режиссер-постановщик снимет вам любой контент аки боженька. Вам не придется беспокоиться об аренде оборудования и искать команду для съёмки.</p>
@@ -356,7 +342,7 @@
 								ПОД КЛЮЧ: студия + съёмка + <span>стандартный</span> монтаж
 							</h3>
 							<div class="packages__price">
-								От <span> 34 990 P </span>/ 2 часа
+								<span> 34 990 P </span>/ 2 часа
 							</div>
 							<div class="packages__description">
 								<p>Наш монтаж точно выйдет в 2 раза дешевле, чем нанимать сторонних спецов, мы — сделаем его быстрее, вы — снимите с себя головную боль о поиске монтажёра.</p>
@@ -377,7 +363,7 @@
 								ПОД КЛЮЧ: студия + съёмка + <span>ПРО</span>монтаж
 							</h3>
 							<div class="packages__price">
-								От <span> 44 990 P </span>/ 2 часа
+								<span> 44 990 P </span>/ 2 часа
 							</div>
 							<div class="packages__description">
 								<p>Оптимальный пакет, чтобы сделать длинный формат подкаста или интервью более динамичным, добавив фото и видео, зацепить зрителя тизером и удивить красивой картинкой.</p>
@@ -398,7 +384,7 @@
 								ПОД КЛЮЧ: студия + съёмка + <span>авторский</span> монтаж
 							</h3>
 							<div class="packages__price">
-								От <span> 54 990 P </span>/ 2 часа
+								<span> 54 990 P </span>/ 2 часа
 							</div>
 							<div class="packages__description">
 								<p>Выполним любой запрос по съёмке и пост-продакшену: цветокоррекция, сведение звука, графика, саунд-дизайн, подсъём бэкстейджа. Даже можем персонально изготовить декорации под ваш проект.</p>
@@ -421,7 +407,7 @@
 					<h2 class="tabs-block__main-title">Производство любого видеоконтента</h2>
 					<div class="tabs-block__links">
 						<a href="#" data-goto="#podcast" class="tabs-block__link active">Подкасты / Интервью</a>
-						<a href="#" data-goto="#reels" class="tabs-block__link">Reels / Shorts</a>
+						<a href="#" data-goto="#reels" class="tabs-block__link">Reels</a>
 						<a href="#" data-goto="#youtube" class="tabs-block__link">YouTube-шоу</a>
 						<a href="#" data-goto="#stream" class="tabs-block__link">Онлайн трансляции</a>
 						<a href="#" data-goto="#courses" class="tabs-block__link">Курсы</a>
@@ -430,7 +416,7 @@
 					<div class="tabs-block__sliders">
 						<div class="navigation-slider">
 							<button class="navigation-slider__button active">Подкасты / Интервью</button>
-							<button class="navigation-slider__button">Reels / Shorts</button>
+							<button class="navigation-slider__button">Reels</button>
 							<button class="navigation-slider__button">Интервью</button>
 							<button class="navigation-slider__button">YouTube-шоу</button>
 							<button class="navigation-slider__button">Онлайн трансляции</button>
@@ -463,9 +449,9 @@
 											<span>/ час</span>
 										</div>
 										<div class="tabs-block__actions">
-											<a href="#" class="tabs-block__order">Заказать</a>
+											<a href="#" class="tabs-block__order">Бронировать</a>
 											<a href="#" class="tabs-block__more">
-												<span>Подробнее</span>
+												<span>Примеры работ</span>
 												<img src="img/packages/arrow.svg" alt="arrow">
 											</a>
 										</div>
@@ -495,9 +481,9 @@
 											<li>от 5490 ₽/шт. — под ключ: студия+съёмка+монтаж</li>
 										</ul>
 										<div class="tabs-block__actions">
-											<a href="#" class="tabs-block__order">Заказать</a>
+											<a href="#" class="tabs-block__order">Бронировать</a>
 											<a href="#" class="tabs-block__more">
-												<span>Подробнее</span>
+												<span>Примеры работ</span>
 												<img src="img/packages/arrow.svg" alt="arrow">
 											</a>
 										</div>
@@ -523,9 +509,9 @@
 											<span>/ час</span>
 										</div>
 										<div class="tabs-block__actions">
-											<a href="#" class="tabs-block__order">Заказать</a>
+											<a href="#" class="tabs-block__order">Бронировать</a>
 											<a href="#" class="tabs-block__more">
-												<span>Подробнее</span>
+												<span>Примеры работ</span>
 												<img src="img/packages/arrow.svg" alt="arrow">
 											</a>
 										</div>
@@ -551,9 +537,9 @@
 											<span>/ час</span>
 										</div>
 										<div class="tabs-block__actions">
-											<a href="#" class="tabs-block__order">Заказать</a>
+											<a href="#" class="tabs-block__order">Бронировать</a>
 											<a href="#" class="tabs-block__more">
-												<span>Подробнее</span>
+												<span>Примеры работ</span>
 												<img src="img/packages/arrow.svg" alt="arrow">
 											</a>
 										</div>
@@ -579,9 +565,9 @@
 											<span>/ час</span>
 										</div>
 										<div class="tabs-block__actions">
-											<a href="#" class="tabs-block__order">Заказать</a>
+											<a href="#" class="tabs-block__order">Бронировать</a>
 											<a href="#" class="tabs-block__more">
-												<span>Подробнее</span>
+												<span>Примеры работ</span>
 												<img src="img/packages/arrow.svg" alt="arrow">
 											</a>
 										</div>
@@ -604,13 +590,13 @@
 										</div>
 										<div class="tabs-block__price">
 											От
-											<span>3 980 р </span>
+											<span>2 990 р </span>
 											<span>/ час</span>
 										</div>
 										<div class="tabs-block__actions">
-											<a href="#" class="tabs-block__order">Заказать</a>
+											<a href="#" class="tabs-block__order">Бронировать</a>
 											<a href="#" class="tabs-block__more">
-												<span>Подробнее</span>
+												<span>Примеры работ</span>
 												<img src="img/packages/arrow.svg" alt="arrow">
 											</a>
 										</div>
@@ -628,14 +614,14 @@
 						<div class="tabs-block__items">
 							<div id="podcast" class="tabs-block__item">
 								<h2 class="tabs-block__title">
-									Подкасты
+									Подкасты/Интервью
 								</h2>
 								<div class="tabs-block__label">
 									не как у всех
 								</div>
 								<div class="tabs-block__text">
 									<p>Мы выводим подкасты на новый уровень.</p>
-									<p>Снимаем подкасты, как настоящие телевизионные шоу.</p>
+									<p>Снимаем интервью, как настоящие телевизионные шоу.</p>
 								</div>
 								<div class="tabs-block__price">
 									От
@@ -645,7 +631,7 @@
 								<div class="tabs-block__actions">
 									<a href="#" class="tabs-block__order">Заказать</a>
 									<a href="#" class="tabs-block__more">
-										<span>Подробнее</span>
+										<span>Примеры работ</span>
 										<img src="img/packages/arrow.svg" alt="arrow">
 									</a>
 								</div>
@@ -672,7 +658,7 @@
 								<div class="tabs-block__actions">
 									<a href="#" class="tabs-block__order">Заказать</a>
 									<a href="#" class="tabs-block__more">
-										<span>Подробнее</span>
+										<span>Примеры работ</span>
 										<img src="img/packages/arrow.svg" alt="arrow">
 									</a>
 								</div>
@@ -695,7 +681,7 @@
 								<div class="tabs-block__actions">
 									<a href="#" class="tabs-block__order">Заказать</a>
 									<a href="#" class="tabs-block__more">
-										<span>Подробнее</span>
+										<span>Примеры работ</span>
 										<img src="img/packages/arrow.svg" alt="arrow">
 									</a>
 								</div>
@@ -718,7 +704,7 @@
 								<div class="tabs-block__actions">
 									<a href="#" class="tabs-block__order">Заказать</a>
 									<a href="#" class="tabs-block__more">
-										<span>Подробнее</span>
+										<span>Примеры работ</span>
 										<img src="img/packages/arrow.svg" alt="arrow">
 									</a>
 								</div>
@@ -741,7 +727,7 @@
 								<div class="tabs-block__actions">
 									<a href="#" class="tabs-block__order">Заказать</a>
 									<a href="#" class="tabs-block__more">
-										<span>Подробнее</span>
+										<span>Примеры работ</span>
 										<img src="img/packages/arrow.svg" alt="arrow">
 									</a>
 								</div>
@@ -765,7 +751,7 @@
 								<div class="tabs-block__actions">
 									<a href="#" class="tabs-block__order">Заказать</a>
 									<a href="#" class="tabs-block__more">
-										<span>Подробнее</span>
+										<span>Примеры работ</span>
 										<img src="img/packages/arrow.svg" alt="arrow">
 									</a>
 								</div>
@@ -816,29 +802,12 @@
 									<div class="about__decore-right"></div>
 								</div>
 								<div class="about__image">
-									<img src="img/about/07.jpg" alt="Image">
-								</div>
-								<h3 class="about__subtitle">Просто самое красивое пространство</h3>
-								<div class="about__description">
-									У нас снимают даже в коридоре, в зоне ожидания, а в туалет заходят со словами: «Здесь что у вас тоже локация для съёмок?!». А ещё собственная парковка, изолированные гримёрки, лаундж-зона и кофе. Ну мёд!
-								</div>
-							</div>
-						</div>
-						<div class="about__slide swiper-slide">
-							<div class="about__item">
-								<div class="about__item-decore">
-									<div class="about__decore-top"></div>
-									<div class="about__decore-bottom"></div>
-									<div class="about__decore-left"></div>
-									<div class="about__decore-right"></div>
-								</div>
-								<div class="about__image">
 									<img src="img/about/01.jpg" alt="Image">
 								</div>
 								<h3 class="about__subtitle">Не нужно искать команду, мы уже
 									все здесь</h3>
 								<div class="about__description">
-									Мы — продакшн-студия с командой бывших телевизионщиков с огромным опытом съемок и монтажа масштабных проектов. Не сомневайся, будет очень красиво. Придумаем, напишем, снимем и смонтируем. Вам лишь нужно донести себя до студии.
+									Мы — продакшн-студия с командой бывших телевизионщиков с огромным опытом съемок и монтажа масштабных проектов. Придумаем, напишем, снимем и смонтируем. Вам лишь нужно донести себя до студии.
 								</div>
 							</div>
 						</div>
@@ -907,7 +876,24 @@
 								</div>
 								<h3 class="about__subtitle">Аппаратная</h3>
 								<div class="about__description">
-									Мы реализовали в студии мини-телевизионную аппаратную, откуда режиссер контролирует съемку. Никто не будет вторгаться к вам во время записи. Это удобно для съемок больших шоу, можно вести съемку «по уху» и контролировать процесс, наблюдая за съёмкой на большом плейбеке.
+									Мы реализовали в студии мини-телевизионную аппаратную, откуда режиссер контролирует съемку. Можно вести съемку «по уху» и контролировать процесс, наблюдая за съёмкой на большом плейбеке
+								</div>
+							</div>
+						</div>
+						<div class="about__slide swiper-slide">
+							<div class="about__item">
+								<div class="about__item-decore">
+									<div class="about__decore-top"></div>
+									<div class="about__decore-bottom"></div>
+									<div class="about__decore-left"></div>
+									<div class="about__decore-right"></div>
+								</div>
+								<div class="about__image">
+									<img src="img/about/07.jpg" alt="Image">
+								</div>
+								<h3 class="about__subtitle">Просто самое красивое пространство</h3>
+								<div class="about__description">
+									У нас снимают даже в коридоре, в зоне ожидания, а в туалет заходят со словами: «Здесь что у вас тоже локация для съёмок?!». А ещё собственная парковка, изолированные гримёрки, лаундж-зона и кофе. Ну мёд!
 								</div>
 							</div>
 						</div>
@@ -915,22 +901,6 @@
 				</div>
 			</div>
 			<div class="about__items">
-				<div data-rotate="8" class="about__item">
-					<div class="about__item-decore">
-						<div class="about__decore-top"></div>
-						<div class="about__decore-bottom"></div>
-						<div class="about__decore-left"></div>
-						<div class="about__decore-right"></div>
-					</div>
-					<div class="about__image">
-						<img src="img/about/07.jpg" alt="Image">
-					</div>
-					<h3 class="about__subtitle">Просто
-						самое красивое пространство</h3>
-					<div class="about__description">
-						У нас снимают даже в коридоре, в зоне ожидания, а в туалет заходят со словами: «Здесь что у вас тоже локация для съёмок?!». А ещё собственная парковка, изолированные гримёрки, лаундж-зона и кофе. Ну мёд!
-					</div>
-				</div>
 				<div data-rotate="-4" class="about__item">
 					<div class="about__item-decore">
 						<div class="about__decore-top"></div>
@@ -944,7 +914,7 @@
 					<h3 class="about__subtitle">Не нужно искать команду, мы уже
 						все здесь</h3>
 					<div class="about__description">
-						Мы — продакшн-студия с командой бывших телевизионщиков с огромным опытом съемок и монтажа масштабных проектов. Не сомневайся, будет очень красиво. Придумаем, напишем, снимем и смонтируем. Вам лишь нужно донести себя до студии.
+						Мы — продакшн-студия с командой бывших телевизионщиков с огромным опытом съемок и монтажа масштабных проектов. Придумаем, напишем, снимем и смонтируем. Вам лишь нужно донести себя до студии.
 					</div>
 				</div>
 				<div data-rotate="5" class="about__item">
@@ -1008,7 +978,23 @@
 					</div>
 					<h3 class="about__subtitle">Аппаратная</h3>
 					<div class="about__description">
-						Мы реализовали в студии мини-телевизионную аппаратную, откуда режиссер контролирует съемку. Никто не будет вторгаться к вам во время записи. Это удобно для съемок больших шоу, можно вести съемку «по уху» и контролировать процесс, наблюдая за съёмкой на большом плейбеке.
+						Мы реализовали в студии мини-телевизионную аппаратную, откуда режиссер контролирует съемку. Можно вести съемку «по уху» и контролировать процесс, наблюдая за съёмкой на большом плейбеке.
+					</div>
+				</div>
+				<div data-rotate="8" class="about__item">
+					<div class="about__item-decore">
+						<div class="about__decore-top"></div>
+						<div class="about__decore-bottom"></div>
+						<div class="about__decore-left"></div>
+						<div class="about__decore-right"></div>
+					</div>
+					<div class="about__image">
+						<img src="img/about/07.jpg" alt="Image">
+					</div>
+					<h3 class="about__subtitle">Просто
+						самое красивое пространство</h3>
+					<div class="about__description">
+						У нас снимают даже в коридоре, в зоне ожидания, а в туалет заходят со словами: «Здесь что у вас тоже локация для съёмок?!». А ещё собственная парковка, изолированные гримёрки, лаундж-зона и кофе. Ну мёд!
 					</div>
 				</div>
 			</div>
@@ -1117,8 +1103,8 @@
 			<div class="equipment__container">
 				<div class="equipment__wrapper">
 					<div class="equipment__content">
-						<h2 class="equipment__title">Оборудование
-							для съемки</h2>
+						<h2 class="equipment__title">Аренда
+							оборудования</h2>
 						<div class="equipment__items">
 							<div class="equipment__item">камеры</div>
 							<div class="equipment__item">свет</div>
@@ -1129,8 +1115,8 @@
 							<img src="img/equipment/mobile-image.jpg" alt="Image">
 						</div>
 						<div class="equipment__text">
-							<p>Киношные камеры, микрофоны, которые ловят даже шёпот мухи, и свет, делающий вашу кожу идеально киношной (даже без макияжа). Всё это работает в абсолютной гармонии, чтобы превратить вашу идею в шедевр. </p>
-							<p>А мы знаем, как настроить технику так, чтобы она показала максимум. Настолько максимум, что вам останется только наслаждаться результатом.</p>
+							<p>В нашем арсенале есть всё, чтобы воплотить практически любую творческую задачу: топовые камеры, классная оптика, качественный звук и много разного света.</p>
+							<p>Всё это мы сдаем по ценам рентала (а местами даже дешевле), только вам не нужно никуда ехать, стоять в очередях и переплачивать. </p>
 						</div>
 						<div class="equipment__actions">
 							<a href="#" class="equipment__booking">Бронировать</a>
@@ -1184,6 +1170,7 @@
 			<iframe loading="lazy" src="https://yandex.ru/map-widget/v1/org/fabula_production/90179495168/?ll=37.569283%2C55.854078&z=16.6" frameborder="1" allowfullscreen="true"></iframe>
 		</div>
 		<div class="footer__container">
+			<div>
 			<div class="footer__logo">
 
 				<svg width="120" height="34" viewBox="0 0 120 34" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1209,7 +1196,7 @@
 			<div class="footer__get">
 				<h3 class="footer__subtitle">Как добраться?</h3>
 				<div class="footer__item">
-					<span class="footer__label">Москва, Дмитровское шоссе, 62, корп. 2</span>
+					<span class="footer__label white-color">Москва, Дмитровское шоссе, 62, корп. 2</span>
 				</div>
 				<div class="footer__item">
 					<span class="footer__time">10 минут</span>
@@ -1232,7 +1219,7 @@
 			<div class="footer__contacts">
 				<div class="footer__contact-item">
 					<!-- <span class="footer__label">Сюда нам звонить</span> -->
-					<a href="tel:+89944434433">8 (994) 443 44 33</a>
+					<a class="footer__phone" href="tel:+89944434433">8 (994) 443 44 33</a>
 				</div>
 				<div class="footer__contact-item">
 					<span class="footer__label">Сюда писать</span>
@@ -1255,6 +1242,8 @@
 					</a>
 				</div>
 			</div>
+			</div>
+			<div>
 			<div class="footer__bottom">
 				<a href="#">Оферта</a>
 				<a href="#">Политика конфиденциальности</a>
@@ -1262,6 +1251,7 @@
 					<span>Разработано в </span>
 					<img src="img/footer/dev.svg" alt="Image">
 				</p>
+			</div>
 			</div>
 		</div>
 	</footer>
@@ -1622,10 +1612,10 @@
 						<div class="popup-card__type">Съёмка</div>
 						<div class="popup-card__number">02</div>
 					</div>
-					<h2 class="popup-card__include">ЧТо входит:</h2>
+					<h2 class="popup-card__include">Что входит:</h2>
 					<ul>
 						<li>
-							<p>Аренда одного из наших залов.</p>
+							<p>Аренда</p>
 						</li>
 						<li>
 							<p>Всё необходимое оборудование: свет, звук, камеры. Мы не увеличиваем стоимость от количества камер, можем поставить хоть 6 шт.</p>
@@ -1680,7 +1670,7 @@
 							<p>Аренда одного из наших залов.</p>
 						</li>
 						<li>
-							<p>Всё необходимое оборудование: свет, звук, камеры. Мы не увеличиваем стоимость от количества камер, можем поставить хоть 6 шт.</p>
+							<p>Всё необходимое оборудование: свет, звук, камеры.</p>
 						</li>
 						<li>
 							<p>Работа оператора-постановщика.</p>
@@ -1693,7 +1683,7 @@
 						</li>
 					</ul>
 					<a href="#" class="popup-card__label">К вашему приходу локация будет уже готова, свет и камеры выставлены, вы платите только за чистое время съёмки.</a>
-					<p>Минимальный пакет «Съёмка + монтаж» — 2 часа.</p>
+					<p>Минимальная продолжительность съёмки с монтажом – 2 часа</p>
 					<div class="popup-card__footer">
 						<div class="popup-card__price">
 							От
