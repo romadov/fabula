@@ -1,3 +1,27 @@
+.main-section__content::before{
+  height: 60vw;
+}
+
+.tabs-block__items{
+  padding: 1.875rem 1.9375rem;
+}
+
+.packages__price span{
+  margin-left: 0;
+}
+
+.main-section__wrapper{
+  padding: 15.5rem 0 0 0;
+}
+
+.header__container{
+  padding: 0 2.9375rem;
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
 .marquee-content{
   min-width: 70%;
 }
@@ -116,5 +140,32 @@
   .tabs-block__item {
     -webkit-transform: translate(0, 0) !important;
     transform: translate(0, 0) !important;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 101.875em) {
+  .record {
+    padding-top: clamp(6.25rem, 2.7385496183rem + 2.557252vw, 20.625rem);
+  }
+}
+
+@media (min-width: 80em) {
+  .item-format__price {
+    font-size: 0.125rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer__get .booking {
+    position: absolute;
+    top: 220%;
+    right: 0;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 61.9375em) {
+  .formats {
+    padding-bottom: 1.125rem;
   }
 }
