@@ -1,5 +1,35 @@
-.main-section__content::before{
-  height: 60vw;
+.main-section__content{
+  height: 80vh;
+}
+
+.main-section__gradient{
+  height: 139%;
+}
+
+.item-format__description ul li::before{
+  top: 10px;
+}
+
+.presentation-video{
+  margin-top: 150px;
+}
+
+.main-section__content::before {
+  height: 55vw;
+  margin-top: -25vh;
+}
+
+.marquee{
+  margin-top: 4.125rem;
+}
+
+.main-section{
+  height: 80vh;
+}
+
+.main-section__circle{
+  height: 80vh;
+  margin-top: 0;
 }
 
 .tabs-block__items{
@@ -11,7 +41,7 @@
 }
 
 .main-section__wrapper{
-  padding: 15.5rem 0 0 0;
+  padding: 0;
 }
 
 .header__container{
@@ -126,14 +156,14 @@
   .record {
     padding-top: 7.625rem;
   }
-  .main-section__content::before{
-    position: relative;
-    top: 10vh;
-  }
+  /*.main-section__content::before{*/
+  /*  position: relative;*/
+  /*  top: 10vh;*/
+  /*}*/
 
-  .loaded .main-section__video-pc {
-    padding-top: 25vh;
-  }
+  /*.loaded .main-section__video-pc {*/
+  /*  padding-top: 25vh;*/
+  /*}*/
 }
 
 @media (max-width: 768px) {
@@ -146,6 +176,20 @@
 @media (min-width: 20em) and (max-width: 101.875em) {
   .record {
     padding-top: clamp(6.25rem, 2.7385496183rem + 2.557252vw, 20.625rem);
+  }
+}
+
+@media (max-width: 132.5em) {
+  .main-section__content::before {
+    height: 60vw;
+    margin-top: -20vh;
+  }
+}
+
+@media (max-width: 100em) {
+  .main-section__content::before {
+    height: 75vw;
+    margin-top: -20vh;
   }
 }
 
@@ -167,5 +211,37 @@
 @media (min-width: 61.9375em) {
   .formats {
     padding-bottom: 1.125rem;
+  }
+}
+
+@media (max-width: 78.75em) {
+  .main-section__content::before {
+    height: 110vw;
+    margin-top: -20vh;
+  }
+}
+
+@media (max-width: 61.9375em) {
+  .main-section__content::before {
+    height: 150vw;
+  }
+}
+
+@media (max-width: 50.625em) {
+  .main-section__content::before {
+    height: 190vw;
+    margin: 0 auto;
+  }
+  .main-section__content {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 62em) {
+  .record__title:not(:last-child) {
+    margin-bottom: 1.375rem;
   }
 }
