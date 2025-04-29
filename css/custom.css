@@ -1,3 +1,7 @@
+.equipment__items{
+  gap: 0.425rem;
+}
+
 .main-section__content{
   height: 80vh;
 }
