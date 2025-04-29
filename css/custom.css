@@ -1,5 +1,21 @@
 .equipment__items{
-  gap: 0.425rem;
+  gap: 0.225rem;
+}
+
+.tabs-block__image-block{
+  border: none;
+}
+
+.record__video{
+  border: none;
+}
+
+.presentation-info__item{
+  font-weight: 300;
+}
+
+.equipment__text p{
+  font-weight: 400;
 }
 
 .main-section__content{
@@ -175,6 +191,10 @@
     -webkit-transform: translate(0, 0) !important;
     transform: translate(0, 0) !important;
   }
+  .footer__contact-item a{
+    font-size: 30px !important;
+  }
+
 }
 
 @media (min-width: 20em) and (max-width: 101.875em) {
