@@ -2,6 +2,10 @@
   display: none;
 }
 
+.second-decode{
+  display: none;
+}
+
 .equipment__items{
   gap: 0.225rem;
 }
@@ -228,6 +232,20 @@
 }
 
 @media (max-width: 768px) {
+  .second-decode{
+    display: block;
+    top: 0 !important;
+    height: 116%;
+  }
+
+  .packages__decore{
+    top: -57%
+  }
+
+  .packages__info{
+    padding: 15px;
+  }
+
   .show-mobile{
     display: block;
   }
@@ -337,7 +355,7 @@
   }
 
   .packages__number {
-    margin-left: -50px;
+    margin-left: -40px;
   }
 
   .item-format__description{
@@ -428,7 +446,7 @@
     transform: translate(0, 0) !important;
   }
   .footer__contact-item a{
-    font-size: 30px !important;
+    font-size: 20px !important;
   }
 
 }
