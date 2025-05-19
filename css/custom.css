@@ -232,6 +232,25 @@
 }
 
 @media (max-width: 768px) {
+  .presentation-info__title {
+    order: 1;
+  }
+
+  .presentation-info__phrase {
+    order: 2;
+  }
+
+  .projects{
+    padding-bottom: 30px;
+  }
+  .footer__bottom{
+    margin-top: 30px;
+  }
+
+  .projects__container .booking{
+    display: none;
+  }
+
   .second-decode{
     display: block;
     top: 0 !important;
@@ -260,6 +279,8 @@
     display: none;
   }
   .presentation-info__content {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
   .presentation-marquees {
@@ -340,6 +361,7 @@
 
   .projects__navigation{
     justify-content: space-between;
+    margin-top: 20px;
   }
 
   .projects__right svg:first-of-type {
