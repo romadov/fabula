@@ -417,13 +417,45 @@
     margin-left: 25px;
   }
 
+  .equipment__title:not(:last-child), .equipment__items, .equipment__text, .equipment__actions{
+    padding: 20px;
+  }
+
+  .equipment__items, .equipment__text, .equipment__actions{
+    padding: 0 20px;
+  }
+
   .equipment__wrapper
 {
+    background: radial-gradient(
+            circle,
+            rgba(19, 25, 135, 1),
+            rgba(17, 22, 109, 1),
+            rgba(16, 19, 85, 1),
+            rgba(17, 24, 50, 1)
+    );
     border-radius: 1.25rem;
   margin: 10px;
   border: 1px solid;
-  padding: 20px;
 }
+
+  .equipment__mobile-image img {
+    position: relative;
+
+    mask-image:
+            linear-gradient(to top, black 85%, transparent 100%), /* плавный fade только внизу */
+            linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); /* узкие боковые fade */
+
+    -webkit-mask-image:
+            linear-gradient(to top, black 85%, transparent 100%),
+            linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+
+    mask-composite: intersect;
+    -webkit-mask-composite: destination-in;
+
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+  }
 
   .equipment__mobile-image{
     aspect-ratio: auto;
