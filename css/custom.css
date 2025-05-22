@@ -240,6 +240,18 @@
 }
 
 @media (max-width: 768px) {
+  .menu-open .menu__body{
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .menu-open .menu__body::before{
+    width: 90%;
+  }
+
+  .menu__body{
+    width: 90%;
+  }
+
   .footer__get{
     order: 1;
     margin-top: 60px;
@@ -513,6 +525,7 @@
     font-size: 18px;
     font-weight: 500;
     text-transform: none;
+    border-radius: 4px;
   }
   .header_menu_order_btn a{
     display: flex;
