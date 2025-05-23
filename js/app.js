@@ -9587,16 +9587,14 @@
         const videoHeight = videoContainer.offsetHeight;
 
         gsap.to(videoTitle, {
-            fontSize: "4rem",
-            lineHeight: "1.1",
-            letterSpacing: "0.5px",
+            scale: 2,
             scrollTrigger: {
-                trigger: ".presentation-video__title",
+                trigger: videoTitle,
                 start: "center center",
-                end: "+=300",
-                scrub: 0.5,
+                end: `+=${videoHeight - 100}`,
+                scrub: true,
                 pin: true,
-                pinSpacing: true,
+                pinSpacing: false,
                 ease: "power1.inOut"
             }
         });
