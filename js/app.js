@@ -9588,13 +9588,15 @@
 
         gsap.to(videoTitle, {
             fontSize: "4rem",
+            lineHeight: "1.1",
+            letterSpacing: "0.5px",
             scrollTrigger: {
-                trigger: videoTitle,
+                trigger: ".presentation-video__title",
                 start: "center center",
-                end: `+=${videoHeight - 100}`,
-                scrub: true,
+                end: "+=300",
+                scrub: 0.5,
                 pin: true,
-                pinSpacing: false,
+                pinSpacing: true,
                 ease: "power1.inOut"
             }
         });
