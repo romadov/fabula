@@ -9591,7 +9591,7 @@
             scrollTrigger: {
                 trigger: videoTitle,
                 start: "center center",
-                end: `+=${videoHeight - 100}`,
+                end: `+=${videoHeight + 200}`,
                 scrub: true,
                 pin: true,
                 pinSpacing: false,
