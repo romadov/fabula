@@ -352,6 +352,7 @@
   }
   .presentation-video__container{
     padding-top: 0;
+    background: #141414;
   }
   .presentation-info__items{
     display: none;
@@ -514,10 +515,26 @@
   }
 
   .presentation-video{
-    margin-top: 350px;
+    margin-top: 250px;
   }
   .presentation-video__title{
     display: block;
+    transition: font-size 0.3s ease, transform 0.3s ease;
+    will-change: font-size, transform;
+  }
+
+  .presentation-video__video{
+    margin-top: 200px;
+  }
+
+  .presentation-video__title.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 10px 20px;
+    z-index: 1000;
   }
 
   .header-mobile-block{
