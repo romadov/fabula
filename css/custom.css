@@ -523,6 +523,18 @@
     will-change: font-size, transform;
   }
 
+  .presentation-video__title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+  .presentation-video__title {
+    transform-origin: center center;
+    will-change: transform;
+  }
+
   .presentation-video__video{
     margin-top: 200px;
   }
