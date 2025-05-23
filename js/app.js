@@ -9594,7 +9594,7 @@
                 end: `+=${videoHeight - 100}`,
                 scrub: true,
                 pin: true,
-                pinSpacing: true,
+                pinSpacing: false,
                 ease: "power1.inOut"
             }
         });
