@@ -514,13 +514,23 @@
     display: none;
   }
 
+
   .presentation-video{
     margin-top: 250px;
+    overflow: visible;
   }
-  .presentation-video__title{
+
+
+  .presentation-video__title {
     display: block;
-    transition: font-size 0.3s ease, transform 0.3s ease;
-    will-change: font-size, transform;
+    transform: scale(1);
+    transition: transform 0.05s linear;
+    will-change: transform;
+  }
+
+  .presentation-video__title.moving {
+    position: sticky;
+    top: 30%;
   }
 
   .presentation-video__title-wrapper {
@@ -530,23 +540,8 @@
     height: 100px;
   }
 
-  .presentation-video__title {
-    transform-origin: center center;
-    will-change: transform;
-  }
-
   .presentation-video__video{
     margin-top: 200px;
-  }
-
-  .presentation-video__title.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: white;
-    padding: 10px 20px;
-    z-index: 1000;
   }
 
   .header-mobile-block{

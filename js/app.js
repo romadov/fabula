@@ -9581,25 +9581,6 @@
 
     gsap.registerPlugin(ScrollTrigger);
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const videoContainer = document.querySelector(".presentation-video");
-        const videoTitle = document.querySelector(".presentation-video__title");
-        const videoHeight = videoContainer.offsetHeight;
-
-        gsap.to(videoTitle, {
-            scale: 2,
-            scrollTrigger: {
-                trigger: videoTitle,
-                start: "center center",
-                end: `+=${videoHeight - 100}`,
-                scrub: true,
-                pin: true,
-                pinSpacing: false,
-                ease: "power1.inOut"
-            }
-        });
-    });
-
     const portfolioGrid = document.querySelector(".studios");
     const gridHeight = portfolioGrid.offsetHeight;
     gsapWithCSS.to(".studios__title", {
