@@ -9767,6 +9767,28 @@
         }
     }
     initCustomGSAP();
+    if (window.matchMedia("(max-width: 1023px)").matches) {
+        const videoSection = document.querySelector(".presentation-video");
+        const videoTitle = document.querySelector(".presentation-video__title");
+
+        if (videoSection && videoTitle) {
+            const sectionHeight = videoSection.offsetHeight;
+
+            gsapWithCSS.to(videoTitle, {
+                scale: 1.6,
+                scrollTrigger: {
+                    trigger: videoTitle,
+                    start: "center center",
+                    end: `+=${sectionHeight / 2}`,
+                    scrub: true,
+                    pin: true,
+                    pinSpacing: false,
+                    ease: "power1.inOut",
+                    markers: false // можно включить true для отладки
+                }
+            });
+        }
+    }
     if (window.matchMedia("(min-width: 1024px)").matches) {
         const casesHeight = document.querySelector(".cases").offsetHeight;
         gsapWithCSS.to(".cases__title", {
