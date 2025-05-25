@@ -9775,7 +9775,7 @@
             const sectionHeight = videoSection.offsetHeight;
 
             gsapWithCSS.to(videoTitle, {
-                scale: 1.2,
+                scale: 1.1,
                 scrollTrigger: {
                     trigger: videoTitle,
                     start: "center center",
